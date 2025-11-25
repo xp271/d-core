@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"id": "d-core",
+	"version": "${version}",
+	"name": "D-Core",
+	"description": "D-Core 核心模组 - 提供基础物品和功能",
+	"authors": [
+		"D"
+	],
+	"contact": {
+		"homepage": "",
+		"sources": ""
+	},
+	"license": "MIT",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.dcore.DCore"
+		],
+		"client": [
+			"com.dcore.DCoreClient"
+		]
+	},
+	"mixins": [
+		"d-core.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.22",
+		"fabric-api": "*",
+		"minecraft": "~1.20.1",
+		"java": ">=17"
+	}
+}
+
