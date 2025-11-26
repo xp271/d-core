@@ -1,4 +1,6 @@
 {
-	"item.d-core.green_key": "咸绿"
+	"item.d-core.green_key": "咸绿",
+	"hexcasting.action.d-core:damage_entity": "伤害实体",
+	"hexcasting.action.d-core:damage_entity_list": "伤害实体列表"
 }
 

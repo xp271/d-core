@@ -1,4 +1,6 @@
 {
-	"item.d-core.green_key": "Green Key"
+	"item.d-core.green_key": "Green Key",
+	"hexcasting.action.d-core:damage_entity": "Damage Entity",
+	"hexcasting.action.d-core:damage_entity_list": "Damage Entity List"
 }
 
