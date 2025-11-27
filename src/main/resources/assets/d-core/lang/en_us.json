@@ -1,6 +1,18 @@
 {
 	"item.d-core.green_key": "Green Key",
 	"hexcasting.action.d-core:damage_entity": "Damage Entity",
-	"hexcasting.action.d-core:damage_entity_list": "Damage Entity List"
+	"hexcasting.action.d-core:damage_entity_list": "Damage Entity List",
+	"hexcasting.action.d-core:consume_all_media_damage_entity": "Consume All Media Damage Entity",
+	"hexcasting.action.d-core:consume_all_media_damage_entity_list": "Consume All Media Damage Entity List",
+	"d-core.category.dcore_spells": "D-Core Spells",
+	"d-core.category.dcore_spells.desc": "Custom spells added by the D-Core mod",
+	"d-core.page.damage_entity.1": "Deals damage to the target entity. Damage = Base Damage × Strength². Media cost = Base Cost × Strength².",
+	"d-core.page.damage_entity.2": "This spell can deal massive damage to a single entity, with both damage and cost scaling quadratically with strength.",
+	"d-core.page.damage_entity_list.1": "Deals damage to all entities in the list. Damage per entity = Base Damage × Strength². Media cost = Base Cost × Entity Count² × Strength².",
+	"d-core.page.damage_entity_list.2": "This spell can damage multiple entities simultaneously, perfect for dealing with groups of enemies.",
+	"d-core.page.consume_all_media_damage_entity.1": "Consumes all available media from your inventory and deals damage to the target entity. Damage = Σ(Media consumed per type / Health rate for that type).",
+	"d-core.page.consume_all_media_damage_entity.2": "This is a powerful single-target damage spell that consumes all your media to deal massive damage. Damage is calculated based on each media type's health conversion rate.",
+	"d-core.page.consume_all_media_damage_entity_list.1": "Consumes all available media from your inventory and deals damage to all entities in the list. Total damage is divided by 10, then evenly distributed among all entities.",
+	"d-core.page.consume_all_media_damage_entity_list.2": "This is a powerful area damage spell that consumes all your media to damage multiple targets. Total damage is divided by 10 before distribution, making it suitable for dealing with large groups of enemies."
 }
 

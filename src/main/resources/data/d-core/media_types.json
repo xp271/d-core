@@ -1,0 +1,24 @@
+{
+  "comment": "媒体类型配置文件",
+  "description": "配置哪些物品提供特殊类型的媒体，哪些动作需要特殊类型的媒体",
+  
+  "special_media_items": {
+    "comment": "提供特殊媒体类型的物品配置",
+    "comment_format": "物品ID: { \"amount\": 媒体量, \"type\": \"special\" 或 \"standard\" }",
+    "example": {
+      "spectrum:amethyst_powder": {
+        "amount": 80000,
+        "type": "special"
+      }
+    }
+  },
+  
+  "special_media_actions": {
+    "comment": "需要特殊媒体类型的动作列表",
+    "comment_format": "动作ID: null (表示需要特殊媒体类型)",
+    "example": {
+      "d-core:my_action": null
+    }
+  }
+}
+

@@ -1,0 +1,23 @@
+{
+  "name": "hexcasting.action.d-core:consume_all_media_damage_entity_list",
+  "category": "hexcasting:patterns/spells",
+  "icon": "minecraft:nether_star",
+  "sortnum": 103,
+  "advancement": "hexcasting:root",
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "d-core:consume_all_media_damage_entity_list",
+      "anchor": "d-core:consume_all_media_damage_entity_list",
+      "input": "list",
+      "output": "",
+      "text": "d-core.page.consume_all_media_damage_entity_list.1"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "d-core.page.consume_all_media_damage_entity_list.2"
+    }
+  ]
+}
+

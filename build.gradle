@@ -16,6 +16,10 @@ repositories {
 	mavenCentral()
 	// HexMod 仓库
 	maven { url = 'https://maven.blamejared.com' }
+	// Fabric Maven 仓库
+	maven { url = 'https://maven.fabricmc.net' }
+	// Cardinal Components 仓库（由 Ladysnake 维护）
+	maven { url = 'https://maven.ladysnake.org/releases' }
 }
 
 loom {
@@ -23,6 +27,10 @@ loom {
 	
 	// 允许 Kotlin 文件在 java 目录中
 	sourceSets.main.kotlin.srcDirs += 'src/main/java'
+	
+	mixin {
+		useLegacyMixinAp = false
+	}
 
 	mods {
 		"d-core" {
@@ -46,6 +54,11 @@ dependencies {
 	
 	// HexMod
 	modImplementation "at.petra-k.hexcasting:hexcasting-fabric-${project.minecraft_version}:0.11.3"
+	
+	// Cardinal Components API (用于注册媒体消耗品)
+	// 这些是编译时依赖，运行时由 HexMod 提供
+	modImplementation "dev.onyxstudios.cardinal-components-api:cardinal-components-item:5.2.1"
+	modImplementation "dev.onyxstudios.cardinal-components-api:cardinal-components-base:5.2.1"
 }
 
 processResources {

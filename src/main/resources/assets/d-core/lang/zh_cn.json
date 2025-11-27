@@ -1,6 +1,18 @@
 {
 	"item.d-core.green_key": "咸绿",
-	"hexcasting.action.d-core:damage_entity": "伤害实体",
-	"hexcasting.action.d-core:damage_entity_list": "伤害实体列表"
+	"hexcasting.action.d-core:damage_entity": "魔力打击",
+	"hexcasting.action.d-core:damage_entity_list": "魔力群击",
+	"hexcasting.action.d-core:consume_all_media_damage_entity": "魔力聚爆",
+	"hexcasting.action.d-core:consume_all_media_damage_entity_list": "魔爆术",
+	"d-core.category.dcore_spells": "D-Core 法术",
+	"d-core.category.dcore_spells.desc": "D-Core 模组添加的自定义法术",
+	"d-core.page.damage_entity.1": "对目标实体造成伤害。伤害值 = 基础伤害 × 强度²。消耗的媒体量 = 基础消耗 × 强度²。",
+	"d-core.page.damage_entity.2": "这个法术可以对单个实体造成大量伤害，伤害和消耗都随强度平方增长。",
+	"d-core.page.damage_entity_list.1": "对实体列表中的所有实体造成伤害。每个实体的伤害 = 基础伤害 × 强度²。消耗的媒体量 = 基础消耗 × 实体数量² × 强度²。",
+	"d-core.page.damage_entity_list.2": "这个法术可以对多个实体同时造成伤害，适合对付群体敌人。",
+	"d-core.page.consume_all_media_damage_entity.1": "消耗背包中所有可用的媒体，对目标实体造成伤害。伤害 = Σ(各类型媒体消耗量 / 该类型的血量扣除比例)。",
+	"d-core.page.consume_all_media_damage_entity.2": "这是一个强大的单体伤害法术，会消耗你所有的媒体来造成巨大伤害。伤害根据每种媒体类型的血量扣除比例计算。",
+	"d-core.page.consume_all_media_damage_entity_list.1": "消耗背包中所有可用的媒体，对实体列表中的所有实体造成伤害。总伤害除以10后平均分配给所有实体。",
+	"d-core.page.consume_all_media_damage_entity_list.2": "这是一个强大的群体伤害法术，会消耗你所有的媒体来对多个目标造成伤害。总伤害会除以10后再平均分配，适合对付大量敌人。"
 }
 

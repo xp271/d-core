@@ -23,6 +23,14 @@ public class HexPatterns {
     public static final ActionRegistryEntry DAMAGE_ENTITY_LIST = make("damage_entity_list",
         new ActionRegistryEntry(HexPattern.fromAngles("wdwdww", HexDir.EAST), OpDamageEntityList.INSTANCE));
     
+    // 消耗所有媒体伤害单个实体：输入单个实体，消耗背包中所有媒体，伤害 = 总媒体量 / 媒体血量扣除比例
+    public static final ActionRegistryEntry CONSUME_ALL_MEDIA_DAMAGE_ENTITY = make("consume_all_media_damage_entity",
+        new ActionRegistryEntry(HexPattern.fromAngles("ddaadaada", HexDir.EAST), OpConsumeAllMediaDamageEntity.INSTANCE));
+    
+    // 消耗所有媒体伤害实体列表：输入实体列表，消耗背包中所有媒体，伤害平均分配
+    public static final ActionRegistryEntry CONSUME_ALL_MEDIA_DAMAGE_ENTITY_LIST = make("consume_all_media_damage_entity_list",
+        new ActionRegistryEntry(HexPattern.fromAngles("ddawaaddaaddaaw", HexDir.EAST), OpConsumeAllMediaDamageEntityList.INSTANCE));
+    
     private static ActionRegistryEntry make(String name, ActionRegistryEntry are) {
         // 使用我们自己的 MOD_ID，而不是 HexAPI.modLoc（它使用的是 hexcasting）
         ResourceLocation id = new ResourceLocation(DCore.MOD_ID, name);

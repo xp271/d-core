@@ -1,0 +1,23 @@
+{
+  "name": "hexcasting.action.d-core:damage_entity_list",
+  "category": "hexcasting:patterns/spells",
+  "icon": "minecraft:iron_sword",
+  "sortnum": 101,
+  "advancement": "hexcasting:root",
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "d-core:damage_entity_list",
+      "anchor": "d-core:damage_entity_list",
+      "input": "list, number",
+      "output": "",
+      "text": "d-core.page.damage_entity_list.1"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "d-core.page.damage_entity_list.2"
+    }
+  ]
+}
+
