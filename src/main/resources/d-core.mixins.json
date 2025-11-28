@@ -5,7 +5,8 @@
   "compatibilityLevel": "JAVA_17",
   "mixins": [
     "HexActionsMixin",
-    "ActionContextMixin"
+    "ActionContextMixin",
+    "SpellCancellationMixin"
   ],
   "client": [],
   "server": [],

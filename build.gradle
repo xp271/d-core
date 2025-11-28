@@ -116,3 +116,16 @@ publishing {
 	}
 }
 
+// 自动复制 jar 文件到 mods 文件夹
+task copyToMods(type: Copy) {
+	from remapJar
+	into "${project.projectDir.parentFile.parent}/mods"
+	description = "复制编译好的 jar 文件到 mods 文件夹"
+	doLast {
+		println "✓ 已复制到 mods 文件夹: ${remapJar.archiveFileName.get()}"
+	}
+}
+
+// 在 build 任务完成后自动执行复制
+build.finalizedBy copyToMods
+

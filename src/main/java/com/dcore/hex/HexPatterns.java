@@ -31,6 +31,14 @@ public class HexPatterns {
     public static final ActionRegistryEntry CONSUME_ALL_MEDIA_DAMAGE_ENTITY_LIST = make("consume_all_media_damage_entity_list",
         new ActionRegistryEntry(HexPattern.fromAngles("ddawaaddaaddaaw", HexDir.EAST), OpConsumeAllMediaDamageEntityList.INSTANCE));
     
+    // 速度伤害：根据实体当前血量和速度造成伤害
+    public static final ActionRegistryEntry VELOCITY_DAMAGE_ENTITY = make("velocity_damage_entity",
+        new ActionRegistryEntry(HexPattern.fromAngles("dadaqwadadaqw", HexDir.NORTH_EAST), OpVelocityDamageEntity.INSTANCE));
+    
+    // 负面效果伤害：根据实体身上负面效果的数量造成伤害
+    public static final ActionRegistryEntry NEGATIVE_EFFECT_DAMAGE_ENTITY = make("negative_effect_damage_entity",
+        new ActionRegistryEntry(HexPattern.fromAngles("waqawawaq", HexDir.SOUTH_EAST), OpNegativeEffectDamageEntity.INSTANCE));
+    
     private static ActionRegistryEntry make(String name, ActionRegistryEntry are) {
         // 使用我们自己的 MOD_ID，而不是 HexAPI.modLoc（它使用的是 hexcasting）
         ResourceLocation id = new ResourceLocation(DCore.MOD_ID, name);

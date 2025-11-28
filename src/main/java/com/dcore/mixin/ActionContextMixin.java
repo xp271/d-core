@@ -56,8 +56,10 @@ public class ActionContextMixin {
         at = @At("RETURN")
     )
     private void onAfterActionExecute(CallbackInfoReturnable<?> cir) {
-        // 延迟清除，给 extractMedia 更多时间
-        // 实际的清除应该在 TypedMediaExtractor 中，当 simulate=false 且处理完成后
+        // 在 PatternIota.execute() 返回时，清除取消标记，确保不影响下一个图案的执行
+        // 这样即使当前图案被取消，也不会影响后续图案的执行
+        com.dcore.media.SpellCancellationContext.clear();
+        com.dcore.DCore.LOGGER.info("[ActionContextMixin] PatternIota.execute() 返回，清除取消标记");
     }
     
     /**

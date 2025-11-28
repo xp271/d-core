@@ -1,0 +1,23 @@
+{
+  "name": "hexcasting.action.d-core:velocity_damage_entity",
+  "category": "hexcasting:patterns/spells",
+  "icon": "minecraft:feather",
+  "sortnum": 104,
+  "advancement": "hexcasting:root",
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "d-core:velocity_damage_entity",
+      "anchor": "d-core:velocity_damage_entity",
+      "input": "entity",
+      "output": "",
+      "text": "d-core.page.velocity_damage_entity.1"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "d-core.page.velocity_damage_entity.2"
+    }
+  ]
+}
+

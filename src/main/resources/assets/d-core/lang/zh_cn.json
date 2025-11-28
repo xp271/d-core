@@ -4,15 +4,21 @@
 	"hexcasting.action.d-core:damage_entity_list": "魔力群击",
 	"hexcasting.action.d-core:consume_all_media_damage_entity": "魔力聚爆",
 	"hexcasting.action.d-core:consume_all_media_damage_entity_list": "魔爆术",
+	"hexcasting.action.d-core:velocity_damage_entity": "撕裂",
+	"hexcasting.action.d-core:negative_effect_damage_entity": "负面引爆",
 	"d-core.category.dcore_spells": "D-Core 法术",
 	"d-core.category.dcore_spells.desc": "D-Core 模组添加的自定义法术",
-	"d-core.page.damage_entity.1": "对目标实体造成伤害。伤害值 = 基础伤害 × 强度²。消耗的媒体量 = 基础消耗 × 强度²。",
+	"d-core.page.damage_entity.1": "对目标实体造成伤害。伤害值 = 100 × 强度²。消耗的媒质量 = 2 × 强度²。",
 	"d-core.page.damage_entity.2": "这个法术可以对单个实体造成大量伤害，伤害和消耗都随强度平方增长。",
-	"d-core.page.damage_entity_list.1": "对实体列表中的所有实体造成伤害。每个实体的伤害 = 基础伤害 × 强度²。消耗的媒体量 = 基础消耗 × 实体数量² × 强度²。",
+	"d-core.page.damage_entity_list.1": "对实体列表中的所有实体造成伤害。每个实体的伤害 = 100 × 强度²。消耗的媒质量 = 2 × 实体数量² × 强度²。",
 	"d-core.page.damage_entity_list.2": "这个法术可以对多个实体同时造成伤害，适合对付群体敌人。",
-	"d-core.page.consume_all_media_damage_entity.1": "消耗背包中所有可用的媒体，对目标实体造成伤害。伤害 = Σ(各类型媒体消耗量 / 该类型的血量扣除比例)。",
-	"d-core.page.consume_all_media_damage_entity.2": "这是一个强大的单体伤害法术，会消耗你所有的媒体来造成巨大伤害。伤害根据每种媒体类型的血量扣除比例计算。",
-	"d-core.page.consume_all_media_damage_entity_list.1": "消耗背包中所有可用的媒体，对实体列表中的所有实体造成伤害。总伤害除以10后平均分配给所有实体。",
-	"d-core.page.consume_all_media_damage_entity_list.2": "这是一个强大的群体伤害法术，会消耗你所有的媒体来对多个目标造成伤害。总伤害会除以10后再平均分配，适合对付大量敌人。"
+	"d-core.page.consume_all_media_damage_entity.1": "消耗背包中所有可用的媒质，对目标实体造成伤害。伤害 = Σ(各类型媒质消耗量 / 该类型的血量扣除比例)。",
+	"d-core.page.consume_all_media_damage_entity.2": "这是一个强大的单体伤害法术，会消耗你所有的媒质来造成巨大伤害。伤害根据每种媒质类型的血量扣除比例计算。",
+	"d-core.page.consume_all_media_damage_entity_list.1": "消耗背包中所有可用的媒质，对实体列表中的所有实体造成伤害。",
+	"d-core.page.consume_all_media_damage_entity_list.2": "这是一个强大的群体伤害法术，会消耗你所有的媒质来对多个目标造成伤害。总伤害会除以10后再平均分配，适合对付大量敌人。",
+	"d-core.page.velocity_damage_entity.1": "根据目标实体的当前血量和移动速度造成伤害。伤害 = 当前血量 × 速度/10。最高为实体最大血量的10倍。",
+	"d-core.page.velocity_damage_entity.2": "这个法术让快速移动的实体因自身的速度分裂。实体移动越快，伤害越高。静止的实体不会受到伤害。",
+	"d-core.page.negative_effect_damage_entity.1": "根据目标实体身上负面效果的数量造成伤害。伤害 = 1.2^Σ(所有负面效果等级)。消耗的媒质量 = 所有负面效果等级的连乘。",
+	"d-core.page.negative_effect_damage_entity.2": "这个法术对身上有负面效果的实体造成伤害。负面效果越多、等级越高，伤害越大。如果没有负面效果，造成最小伤害。",
+	"d-core.spell.cancelled.insufficient_health": "法术释放失败：媒质不足"
 }
-

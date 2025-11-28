@@ -4,6 +4,8 @@
 	"hexcasting.action.d-core:damage_entity_list": "Damage Entity List",
 	"hexcasting.action.d-core:consume_all_media_damage_entity": "Consume All Media Damage Entity",
 	"hexcasting.action.d-core:consume_all_media_damage_entity_list": "Consume All Media Damage Entity List",
+	"hexcasting.action.d-core:velocity_damage_entity": "Velocity Damage",
+	"hexcasting.action.d-core:negative_effect_damage_entity": "Negative Effect Detonation",
 	"d-core.category.dcore_spells": "D-Core Spells",
 	"d-core.category.dcore_spells.desc": "Custom spells added by the D-Core mod",
 	"d-core.page.damage_entity.1": "Deals damage to the target entity. Damage = Base Damage × Strength². Media cost = Base Cost × Strength².",
@@ -13,6 +15,11 @@
 	"d-core.page.consume_all_media_damage_entity.1": "Consumes all available media from your inventory and deals damage to the target entity. Damage = Σ(Media consumed per type / Health rate for that type).",
 	"d-core.page.consume_all_media_damage_entity.2": "This is a powerful single-target damage spell that consumes all your media to deal massive damage. Damage is calculated based on each media type's health conversion rate.",
 	"d-core.page.consume_all_media_damage_entity_list.1": "Consumes all available media from your inventory and deals damage to all entities in the list. Total damage is divided by 10, then evenly distributed among all entities.",
-	"d-core.page.consume_all_media_damage_entity_list.2": "This is a powerful area damage spell that consumes all your media to damage multiple targets. Total damage is divided by 10 before distribution, making it suitable for dealing with large groups of enemies."
+	"d-core.page.consume_all_media_damage_entity_list.2": "This is a powerful area damage spell that consumes all your media to damage multiple targets. Total damage is divided by 10 before distribution, making it suitable for dealing with large groups of enemies.",
+	"d-core.page.velocity_damage_entity.1": "Deals damage to the target entity based on its current health and movement velocity. Damage = Current Health × Velocity.",
+	"d-core.page.velocity_damage_entity.2": "This spell deals more damage to fast-moving entities. The faster the entity moves, the more damage it takes. Stationary entities receive no damage.",
+	"d-core.page.negative_effect_damage_entity.1": "Deals damage to the target entity based on the number of negative effects it has. Damage = 1.2^sum(negative effect levels).",
+	"d-core.page.negative_effect_damage_entity.2": "This spell deals more damage to entities with negative effects. The more negative effects and higher levels, the more damage. Entities without negative effects receive minimum damage.",
+	"d-core.spell.cancelled.insufficient_health": "Spell cannot be cast: The required health cost exceeds your maximum health. Your health has been consumed, but the spell failed to execute."
 }
 
